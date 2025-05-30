@@ -1,5 +1,7 @@
+CC = gcc
+
 build:
-	gcc -o xfer xfer.c
+	$(CC) -o xfer xfer.c
 
 clean:
 	rm -f xfer
