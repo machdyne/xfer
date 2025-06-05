@@ -121,7 +121,6 @@ uint32_t crc32b(unsigned char *data, uint32_t len) {
 			mask = -(crc & 1);
 			crc = (crc >> 1) ^ (0xedb88320 & mask);
 		}
-		i = i + 1;
 	}
 	return ~crc;
 }
